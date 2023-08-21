@@ -28,8 +28,7 @@ def getargs():
         return thisArgs
     return parser.parse_args()
 
-
-if __name__ == "__main__":
+def main():
     myArgs = getargs()
     print(myArgs)
 
@@ -42,3 +41,6 @@ if __name__ == "__main__":
 
     if myArgs.fix:
         print('Fix option is selected')
+
+if __name__ == "__main__":
+    main()
